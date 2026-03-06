@@ -15,7 +15,7 @@ inputs=['OverallQual', 'GrLivArea', 'GarageArea', '1stFlrSF',
 input_data = {}
 for features in inputs:
     if features == 'CentralAir':
-        input[features] = st.selectbox(f"{features}",option=['Yes','No'], index=0)
+        input[features] = st.selectbox(f"{features}",options=['Yes','No'], index=0)
     else:
         input_data[features] = st.number_input(
             f"{features}",
