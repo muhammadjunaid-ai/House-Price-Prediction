@@ -13,7 +13,7 @@ inputs=['OverallQual', 'GrLivArea', 'GarageArea', '1stFlrSF',
        'CentralAir']
 
 input_data = {}
-for features in input:
+for features in inputs:
     if features == 'CentralAir':
         input_data[features] = st.selectbox(f"{features}", options= ['Yes','No'], index=0)
     else:
